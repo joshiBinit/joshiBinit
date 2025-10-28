@@ -1,6 +1,9 @@
 # 💫 About Me:
-Currently working on:<br>Technofex Nepal (Angular Developer)<br>Previous Experience on I.M.S Software (Angular Developer)<br>Open to collaborate on : MEAN/MERN stack development.<br>Need help on Generative AI<br>funfact: tech freak with gaming passion
-
+👨‍💻 Currently working at **Technofex Nepal** as an *Angular Developer* (On-site).<br>
+💼 Previously worked at **I.M.S Software** as an *Angular Developer* and at **OctaNet Services** as a *Web Development Intern* (Remote).<br>
+🤝 Open to collaborate on **MERN/MEAN Stack Development** projects.<br>
+🧠 Currently learning and exploring **Generative AI**.<br>
+🎮 Fun fact: I'm a **tech freak** with a passion for **gaming**.
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/joshi_binit) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/binit-joshi-2b9773242) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:binitjoshi4554@gmail.com) 
