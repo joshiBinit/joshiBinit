@@ -20,7 +20,6 @@ const Contact: React.FC = () => {
       [e.target.name]: e.target.value,
     });
 
-  /** ✉️ Custom handler that posts to Formspree via fetch */
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
@@ -42,7 +41,6 @@ const Contact: React.FC = () => {
       setStatus("error");
     }
 
-    // remove notification after a few seconds
     setTimeout(() => setStatus("idle"), 4000);
   };
 
@@ -54,25 +52,23 @@ const Contact: React.FC = () => {
             Get In Touch
           </h2>
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Have a project in mind or just want to chat? I’d love to hear from
+            Have a project in mind or just want to chat? I'd love to hear from
             you.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* ---------- Left Info Column ---------- */}
           <div className="space-y-10">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Let’s work together</h3>
+              <h3 className="text-2xl font-bold mb-4">Let's work together</h3>
               <p className="text-gray-400 leading-relaxed">
-                I’m always open to collaborating on interesting projects or new
+                I'm always open to collaborating on interesting projects or new
                 opportunities. Whether you want to start a conversation or ask a
-                quick question, drop me a message below—let’s make ideas happen.
+                quick question, drop me a message below—let's make ideas happen.
               </p>
             </div>
 
             <div className="space-y-6">
-              {/* contact info items */}
               <div className="flex items-center space-x-4">
                 <div className="bg-white/10 p-3 rounded-lg">
                   <Mail className="w-6 h-6 text-white" />
@@ -107,7 +103,6 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* ---------- Form Column ---------- */}
           <div className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -182,7 +177,6 @@ const Contact: React.FC = () => {
                 </span>
               </button>
 
-              {/* feedback below the button */}
               {status === "sent" && (
                 <p className="text-center text-green-400 text-sm">
                   Message sent successfully!

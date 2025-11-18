@@ -1,5 +1,6 @@
 import React from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { SiLinkedin, SiGithub } from "react-icons/si";
 
 const Footer: React.FC = () => {
   return (
@@ -11,28 +12,28 @@ const Footer: React.FC = () => {
               Binit Joshi
             </h3>
             <p className="text-gray-400 text-sm">
-              Full‑Stack Developer — creating clean, performant web experiences.
+              Full-Stack Developer — creating clean, performant web experiences.
             </p>
           </div>
 
           <div className="flex items-center space-x-6">
             <a
-              href="https://github.com/"
+              href="https://github.com/joshiBinit"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
               className="group p-2 rounded-full transition-all duration-300"
             >
-              <Github className="w-6 h-6 text-gray-400 group-hover:text-white group-hover:scale-110 transition-all duration-300" />
+              <SiGithub className="w-6 h-6 text-gray-500 group-hover:text-white group-hover:scale-110 transition-all duration-300" />{" "}
             </a>
             <a
-              href="https://linkedin.com/"
+              href="www.linkedin.com/in/binit-joshi-2b9773242"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="group p-2 rounded-full transition-all duration-300"
             >
-              <Linkedin className="w-6 h-6 text-gray-400 group-hover:text-white group-hover:scale-110 transition-all duration-300" />
+              <SiLinkedin className="w-6 h-6 text-gray-500 group-hover:text-white group-hover:scale-110 transition-all duration-300" />{" "}
             </a>
             <a
               href="mailto:binitjoshi4554@gmail.com"

@@ -17,7 +17,7 @@ const About: React.FC = () => {
     },
     {
       icon: <Brain className="w-8 h-8" />,
-      title: "Problem‑Solving Mindset",
+      title: "Problem-Solving Mindset",
       description:
         "Transforming complex problems into elegant solutions through logical thinking and creativity.",
     },

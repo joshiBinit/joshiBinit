@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
 
         <div className="animate-fade-in-up delay-600 flex justify-center space-x-8 mb-16">
           <a
-            href="https://github.com/"
+            href="https://github.com/joshiBinit"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative p-3 transition-all duration-300"
@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
             <SiGithub className="w-6 h-6 text-gray-500 group-hover:text-white group-hover:scale-110 transition-all duration-300" />{" "}
           </a>
           <a
-            href="https://linkedin.com/"
+            href="www.linkedin.com/in/binit-joshi-2b9773242"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative p-3 transition-all duration-300"

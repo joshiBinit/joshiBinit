@@ -1,17 +1,18 @@
 import React from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import nepBuy from "../assets/nepBuy.png";
+import { SiGithub } from "react-icons/si";
 
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "NepBuy",
       description:
-        "A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include authentication, payment integration, and an intuitive admin dashboard.",
-      image:
-        "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "A full-stack e-commerce solution built with React, Node.js, Express and MongoDB. Features include authentication, CRUD operation, customer and admin dashboard with order management,and payment integration",
+      image: nepBuy,
+      technologies: ["React", "Node.js", "Express", "MongoDB"],
+      liveUrl: "https://ecommerce-frontend-nine-nu.vercel.app/",
+      githubUrl: "https://github.com/joshiBinit/Ecommerce-app",
     },
     {
       title: "Task Management App",
@@ -19,7 +20,7 @@ const Projects: React.FC = () => {
         "A real-time collaboration tool featuring drag-and-drop tasks, team boards, and cloud sync.",
       image:
         "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
+      technologies: ["Vue.js", "Firebvase", "Tailwind CSS"],
       liveUrl: "#",
       githubUrl: "#",
     },
@@ -108,7 +109,7 @@ const Projects: React.FC = () => {
                       href={project.githubUrl}
                       className="flex items-center space-x-2 text-white font-semibold hover:text-black hover:bg-white px-4 py-2 rounded-md border border-white/10 transition-all duration-300"
                     >
-                      <Github size={18} />
+                      <SiGithub size={18} />
                       <span>Code</span>
                     </a>
                   </div>

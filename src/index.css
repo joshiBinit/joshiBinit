@@ -1,17 +1,12 @@
 @import "tailwindcss";
 
-/* Define your theme extensions and design tokens here */
-/* postcss */
 @theme {
-  /* Font family */
   --font-sans: "Inter", system-ui, sans-serif;
 
-  /* Custom spacing sizes */
   --spacing-18: 4.5rem;
   --spacing-88: 22rem;
 }
 
-/* Define keyframes as normal CSS */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -33,8 +28,6 @@
   }
 }
 
-/* Note: The original bounce-slow animation uses bounce which is a Tailwind default keyframe. 
-   To replicate 'bounce-slow', you can redefine a slower bounce animation or just use Tailwind's default 'bounce' animation with a custom duration here. */
 @keyframes bounceSlow {
   0%,
   100% {
@@ -45,7 +38,6 @@
   }
 }
 
-/* Create utility classes to apply your custom animations */
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out;
 }
@@ -56,4 +48,23 @@
   animation: bounceSlow 2s infinite;
 }
 
-/* Dark mode is still handled via Tailwind's 'dark' class, so no special CSS needed here */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  transition: background-color 9999s ease-in-out 0s !important;
+  -webkit-text-fill-color: white !important;
+  box-shadow: 0 0 0px 1000px #000 inset !important;
+  border: 1px solid #525252 !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

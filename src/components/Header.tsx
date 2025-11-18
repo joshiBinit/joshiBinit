@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -114,7 +116,10 @@ const Header: React.FC = () => {
               </div>
 
               <div className="ml-8">
-                <button className="group relative px-6 py-2 overflow-hidden border border-white/20 hover:border-white transition-all duration-300">
+                <button
+                  onClick={() => navigate("/experience")}
+                  className="group relative px-6 py-2 overflow-hidden border border-white/20 hover:border-white transition-all duration-300"
+                >
                   <span className="relative z-10 text-xs font-light tracking-widest uppercase text-gray-400 group-hover:text-black transition-colors duration-300">
                     Hire Me
                   </span>
