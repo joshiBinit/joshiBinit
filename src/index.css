@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Define your theme extensions and design tokens here */
+/* postcss */
+@theme {
+  /* Font family */
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Custom spacing sizes */
+  --spacing-18: 4.5rem;
+  --spacing-88: 22rem;
+}
+
+/* Define keyframes as normal CSS */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Note: The original bounce-slow animation uses bounce which is a Tailwind default keyframe. 
+   To replicate 'bounce-slow', you can redefine a slower bounce animation or just use Tailwind's default 'bounce' animation with a custom duration here. */
+@keyframes bounceSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25%);
+  }
+}
+
+/* Create utility classes to apply your custom animations */
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+.animate-gradient {
+  animation: gradient 3s ease infinite;
+}
+.animate-bounce-slow {
+  animation: bounceSlow 2s infinite;
+}
+
+/* Dark mode is still handled via Tailwind's 'dark' class, so no special CSS needed here */
